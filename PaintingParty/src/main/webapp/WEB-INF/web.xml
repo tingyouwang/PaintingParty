@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>PaintingParty</display-name>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- 應用程式啟動時，設定一些固定路徑，講義搜尋servletContext -->
+  
+  <context-param> <!-- 大頭照儲存路徑 -->
+    <param-name>HeadShotPath</param-name>
+    <param-value>C:/PaintingImg/HeadShot/</param-value>
+  </context-param>
+  
+  <context-param> <!-- 成品圖儲存路徑 -->
+    <param-name>ProductPath</param-name>
+    <param-value>C:/PaintingImg/Product/</param-value>
+  </context-param>
+  
+  <context-param> <!-- 例圖儲存路徑 -->
+    <param-name>ExamplePath</param-name>
+    <param-value>C:/PaintingImg/Example/</param-value>
+  </context-param>
+  
+  <context-param> <!-- 個人畫作儲存路徑(第一階段暫沒用到) -->
+    <param-name>DrawingPath</param-name>
+    <param-value>C:/PaintingImg/Drawing/</param-value>
+  </context-param>
+  
+  <!-- 分界線 -->
+  
+  
+  <filter>
+    <filter-name>AllPaternFilter</filter-name>
+    <filter-class>tw.paintingparty.util.AllPatternFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AllPaternFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <filter>
+    <filter-name>OpenSessionViewFilter1</filter-name>
+    <filter-class>tw.paintingparty.util.OpenSessionViewFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+    <filter-name>OpenSessionViewFilter1</filter-name>
+    <url-pattern>/painting.controller/*</url-pattern>
+  </filter-mapping>
+  
+  <!-- 一開始DEMO用 -->
+   <filter-mapping>
+    <filter-name>OpenSessionViewFilter1</filter-name>
+    <url-pattern>/hibernatedemo.controller/*</url-pattern>
+  </filter-mapping>
+   
+  
+
+  
+  
+  
+</web-app>

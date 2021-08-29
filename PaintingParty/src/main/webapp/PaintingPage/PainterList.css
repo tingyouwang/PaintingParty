@@ -1,0 +1,130 @@
+ul {
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+.container{
+    background-color: #f8f9fa;
+}
+
+.left {
+    display: inline-block;
+}
+
+.right {
+    display: inline-block;
+}
+
+.select-btn {
+    background-color: #f1af21;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.select-btn:hover {
+    background-color: #e09e0e;
+}
+
+.sele-set {
+    margin-right: 30px;
+    background-color: #fff;
+    padding: 10px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bold;
+}
+.mb-4 {
+    margin-bottom: 3rem!important;
+}
+.col-6{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -.75rem;
+    margin-left: -.75rem;
+}
+.page-section {
+    padding: 1rem;
+    padding-top: 5em;
+}
+.bg-light {
+    background-color: #fff;
+}
+.portfolio-caption .badge{
+    margin: 0.2rem;
+}
+.badge{
+    display: inline-block;
+    padding: .5em .6em;
+    font-size: 100%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+
+}
+
+.badge-light{
+    color: #212529;
+    background-color: #eef1f3;
+}
+
+.comisstion-cover{
+    width: 250px; 
+    height: 300px;
+    border-radius: 30px;
+
+}
+
+.creators-item{
+    border-radius: 20px;
+}
+
+.justify-content-center{
+    justify-content: center!important;
+}
+
+/* .page-item {
+    z-index: 3;
+    color:#fff;
+    background-color: #b66c3f;
+    border-color: #b66c3f;
+} */
+
+.page-wrap .pager {
+    width: 900px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: #f8f9fa;
+    padding: 30px 27px 35px;
+    text-align: center;
+}
+
+.page-item {
+    padding: 15px;
+}
+
+.btn {
+    font-size: larger;
+}
